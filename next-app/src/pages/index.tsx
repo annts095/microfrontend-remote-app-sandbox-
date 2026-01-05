@@ -21,7 +21,7 @@ export default function Home() {
         <title>Micro Frontend - Remote App</title>
         <meta
           name="description"
-          content="Module Federationで読み込まれるNext.jsマイクロフロントエンド"
+          content="Qiankunで読み込まれるNext.jsマイクロフロントエンド"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -33,7 +33,7 @@ export default function Home() {
           <div className={styles.intro}>
             <h1>Micro Frontend Remote App</h1>
             <p>
-              これはModule Federation（モジュールフェデレーション）を使用して、
+              これはQiankunを使用して、
               ホストアプリケーションから動的に読み込まれるNext.jsで作成されたマイクロフロントエンドです。
               このアプリケーションはポート4001で実行され、独立したリモートアプリケーションとして機能します。
             </p>
