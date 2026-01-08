@@ -38,7 +38,10 @@ export default function Home() {
               このアプリケーションはポート4001で実行され、独立したリモートアプリケーションとして機能します。
             </p>
             <div style={{ marginTop: "24px" }}>
-              <Link href="/child" style={{ textDecoration: "none" }}>
+              <Link
+                href="/next-qiankun/child"
+                style={{ textDecoration: "none" }}
+              >
                 <Button variant="primary">Childページへ</Button>
               </Link>
             </div>
