@@ -11,7 +11,6 @@
   "dependencies": {
     "@annts095/microfrontend-sandbox-ui": "^0.1.7",
     "next": "16.0.10",
-    "qiankun": "^2.10.16",
     "react": "19.2.1",
     "react-dom": "19.2.1"
   },
