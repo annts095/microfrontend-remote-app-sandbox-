@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export default function Child() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-
+  const [count, setCount] = useState(0);
   return (
     <>
       <Head>
@@ -35,14 +35,22 @@ export default function Child() {
             <p>
               これはchildページです。このページにはDrawerコンポーネントが組み込まれています。
             </p>
-            <div style={{ display: "flex", gap: "16px", marginTop: "24px", flexWrap: "wrap" }}>
+            <div
+              style={{
+                display: "flex",
+                gap: "16px",
+                marginTop: "24px",
+                flexWrap: "wrap",
+              }}
+            >
               <Button variant="primary" onClick={() => setIsDrawerOpen(true)}>
                 Drawerを開く
               </Button>
+              <button onClick={() => setCount(count + 1)}>
+                テストボタン（通常のHTML）{count}
+              </button>
               <Link href="/" style={{ textDecoration: "none" }}>
-                <Button variant="secondary">
-                  トップページに戻る
-                </Button>
+                <Button variant="secondary">トップページに戻る</Button>
               </Link>
             </div>
           </div>
@@ -68,4 +76,3 @@ export default function Child() {
     </>
   );
 }
-
