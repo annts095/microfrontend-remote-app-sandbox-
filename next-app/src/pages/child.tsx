@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Button, Drawer } from "@annts095/microfrontend-sandbox-ui";
+import { Avatar } from "@team-lab/flexpay-core/ui";
 import styles from "@/styles/Home.module.css";
 
 const geistSans = Geist({
@@ -46,9 +47,17 @@ export default function Child() {
               <Button variant="primary" onClick={() => setIsDrawerOpen(true)}>
                 Drawerを開く
               </Button>
-              <button onClick={() => setCount(count + 1)}>
+              <Button
+                onClick={() => {
+                  console.log(count);
+                  setCount(count + 1);
+                }}
+              >
                 テストボタン（通常のHTML）{count}
-              </button>
+              </Button>
+              <Avatar>
+                <Avatar.Initials label="テスト" />
+              </Avatar>
               <Link href="/" style={{ textDecoration: "none" }}>
                 <Button variant="secondary">トップページに戻る</Button>
               </Link>

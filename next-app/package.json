@@ -10,9 +10,12 @@
   },
   "dependencies": {
     "@annts095/microfrontend-sandbox-ui": "^0.1.7",
+    "@team-lab/flexpay-core": "^0.0.1-alpha.14",
     "next": "16.0.10",
     "react": "19.2.1",
-    "react-dom": "19.2.1"
+    "react-aria-components": "^1.14.0",
+    "react-dom": "19.2.1",
+    "sass": "^1.97.2"
   },
   "devDependencies": {
     "@types/node": "^20",

@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  transpilePackages: ["@annts095/microfrontend-sandbox-ui"],
+  transpilePackages: ["@annts095/microfrontend-sandbox-ui", "@team-lab/flexpay-core"],
   output: "export",
   images: {
     unoptimized: true,
